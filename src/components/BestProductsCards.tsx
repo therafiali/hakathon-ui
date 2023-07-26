@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsCartPlusFill } from "react-icons/bs";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Toaster from "./Toaster";
 
 const BestProductsCards = ({
   src,
@@ -62,7 +63,7 @@ const BestProductsCards = ({
               </p>
               {discount > 0 && (
                 <p className="mt-2 scroll-m-20  text-base font-semibold tracking-tight line-clamp-1 text-myblackhead">
-                  ${price - ((price*discount)/100)}
+                  ${price - (price * discount) / 100}
                 </p>
               )}
             </div>
@@ -70,11 +71,14 @@ const BestProductsCards = ({
         </div>
       </Link>
       <div className="">
-        <Button className="group bg-myblackhead hover:bg-transparent text-mywhite hover:bg-myblackpara scroll-m-20  text-xs font-semibold rounded-xl absolute bottom-2 right-2 tracking-tight  ">
+        {/* <Button className="group bg-myblackhead hover:bg-transparent text-mywhite hover:bg-myblackpara scroll-m-20  text-xs font-semibold rounded-xl absolute bottom-2 right-2 tracking-tight  ">
           {" "}
           <BsCartPlusFill className="mr-2 h-4 w-4" />
           Add to Cart
-        </Button>
+        </Button> */}
+        <div className="group bg-myblackhead hover:bg-transparent text-mywhite hover:bg-myblackpara scroll-m-20  text-xs font-semibold rounded-xl absolute bottom-2 right-2 tracking-tight  ">
+          <Toaster params={{ slug }} />
+        </div>
         <Button className="group bg-myblackhead hover:bg-transparent text-mywhite hover:bg-myblackpara scroll-m-20  text-xs font-semibold rounded-xl absolute bottom-2 left-2 tracking-tight  ">
           {" "}
           <ShoppingBag className="mr-2 h-4 w-4" />
