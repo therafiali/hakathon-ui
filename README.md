@@ -1,12 +1,12 @@
 
 # Ecommmerce Web App UI
   -  I am using some cool technologies to create a simple ecommerce web app. These technologies include:
-    - ⚫ Next.js
-    - ⚫ Tailwind CSS
-    - ⚫ Shadcn
-    - ⚫ Redux toolkit
-    - ⚫ React-Toastify & Slick-Carousel
-    - ⚫ TypeScript
+    * ⚫ Next.js
+    * ⚫ Tailwind CSS
+    * ⚫ Shadcn
+    * ⚫ Redux toolkit
+    * ⚫ React-Toastify & Slick-Carousel
+    * ⚫ TypeScript
 
 
 ### Watch Youtube Video:
